@@ -5,8 +5,6 @@ Version:	1.3
 Release:	1
 License:	GPL
 Group:		Applications/System
-Group(de):	Applikationen/System
-Group(pl):	Aplikacje/System
 Source0:	http://xavier.bestel.free.fr/%{name}-%{version}.tgz
 Source1:	%{name}-Makefile
 #URL:		
