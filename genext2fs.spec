@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	http://xavier.bestel.free.fr/%{name}-%{version}.tgz
+# Source0-md5:	91c06c5c7ec27ce886e67b3b28d78d9b
 Source1:	%{name}-Makefile
 Patch0:		%{name}-blkdev.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
