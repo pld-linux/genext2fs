@@ -2,12 +2,12 @@ Summary:	Tools for the second extended (ext2) filesystem
 Summary(pl):	Narzêdzia do systemu plikowego ext2
 Name:		genext2fs
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	http://xavier.bestel.free.fr/%{name}-%{version}.tgz
 Source1:	%{name}-Makefile
-#URL:
+Patch0:		%{name}-blkdev.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -22,6 +22,7 @@ linkami symbolicznymi i plikami urz±dzeñ jako normalny u¿ytkownik.
 
 %prep
 %setup  -q -n %{name}-%{version}
+%patch0 -p1
 
 install %{SOURCE1} Makefile
 
