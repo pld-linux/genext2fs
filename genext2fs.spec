@@ -17,6 +17,11 @@ genext2fs generates an ext2 filesystem without the need to be root.
 You can generate a filesystem image, symlinks and device nodes
 included, as a normal user.
 
+%description -l pl
+genext2fs generuje system plików ext2 bez potrzeby posiadania
+uprawnieñ superu¿ytkownia. Mo¿esz wygenerowaæ obraz systemu plików, z
+linkami symbolicznymi i plikami urz±dzeñ jako normalny u¿ytkownik.
+
 %prep
 %setup  -q -n %{name}-%{version}
 
