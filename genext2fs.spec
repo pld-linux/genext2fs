@@ -22,7 +22,7 @@ uprawnieñ superu¿ytkownia. Mo¿esz wygenerowaæ obraz systemu plików, z
 linkami symbolicznymi i plikami urz±dzeñ jako normalny u¿ytkownik.
 
 %prep
-%setup  -q -n %{name}-%{version}
+%setup -q
 %patch0 -p1
 
 install %{SOURCE1} Makefile
@@ -36,6 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 install genext2fs $RPM_BUILD_ROOT%{_bindir}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
