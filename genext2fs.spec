@@ -7,10 +7,10 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://xavier.bestel.free.fr/%{name}-%{version}.tgz
 Source1:	%{name}-Makefile
-#URL:		
+#URL:
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description 
+%description
 genext2fs generates an ext2 filesystem without the need to be root.
 You can generate a filesystem image, symlinks and device nodes
 included, as a normal user.
