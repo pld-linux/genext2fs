@@ -12,8 +12,8 @@ Source0:	http://xavier.bestel.free.fr/%{name}-%{version}.tgz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description 
-genext2fs generates an ext2 filesystem without the need to be
-root. You can generate a filesystem image, symlinks and device nodes
+genext2fs generates an ext2 filesystem without the need to be root.
+You can generate a filesystem image, symlinks and device nodes
 included, as a normal user.
 
 %prep
@@ -21,19 +21,20 @@ included, as a normal user.
 
 %build
 %{__make}
-
 head -56 genext2fs.c >README
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install genext2fs $RPM_BUILD_ROOT%{_bindir}
 
+gzip -9nf README dev.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README dev.txt
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
