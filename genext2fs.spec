@@ -29,7 +29,7 @@ install %{SOURCE1} Makefile
 
 %build
 %{__make}
-head -61 genext2fs.c >README
+head -n 61 genext2fs.c >README
 
 %install
 rm -rf $RPM_BUILD_ROOT
