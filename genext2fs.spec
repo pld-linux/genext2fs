@@ -1,13 +1,14 @@
 Summary:	Tools for the second extended (ext2) filesystem
 Summary(pl):	Narzêdzia do systemu plikowego ext2
 Name:		genext2fs
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	GPL
 Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
 Source0:	http://xavier.bestel.free.fr/%{name}-%{version}.tgz
+Source1:	%{name}-Makefile
 #URL:		
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -17,11 +18,13 @@ You can generate a filesystem image, symlinks and device nodes
 included, as a normal user.
 
 %prep
-%setup  -q -n %{name}
+%setup  -q -n %{name}-%{version}
+
+install %{SOURCE1} Makefile
 
 %build
 %{__make}
-head -56 genext2fs.c >README
+head -61 genext2fs.c >README
 
 %install
 rm -rf $RPM_BUILD_ROOT
