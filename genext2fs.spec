@@ -2,7 +2,7 @@ Summary:	Tools for the second extended (ext2) filesystem
 Summary(pl):	Narzêdzia do systemu plikowego ext2
 Name:		genext2fs
 Version:	1.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/System
 Source0:	http://xavier.bestel.free.fr/%{name}-%{version}.tgz
