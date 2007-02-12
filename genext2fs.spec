@@ -1,5 +1,5 @@
 Summary:	Tools for the second extended (ext2) filesystem
-Summary(pl):	Narzêdzia do systemu plikowego ext2
+Summary(pl.UTF-8):   NarzÄ™dzia do systemu plikowego ext2
 Name:		genext2fs
 Version:	1.3
 Release:	3
@@ -16,10 +16,10 @@ genext2fs generates an ext2 filesystem without the need to be root.
 You can generate a filesystem image, symlinks and device nodes
 included, as a normal user.
 
-%description -l pl
-genext2fs generuje system plików ext2 bez potrzeby posiadania
-uprawnieñ superu¿ytkownia. Mo¿esz wygenerowaæ obraz systemu plików, z
-linkami symbolicznymi i plikami urz±dzeñ jako normalny u¿ytkownik.
+%description -l pl.UTF-8
+genext2fs generuje system plikÃ³w ext2 bez potrzeby posiadania
+uprawnieÅ„ superuÅ¼ytkownia. MoÅ¼esz wygenerowaÄ‡ obraz systemu plikÃ³w, z
+linkami symbolicznymi i plikami urzÄ…dzeÅ„ jako normalny uÅ¼ytkownik.
 
 %prep
 %setup -q
