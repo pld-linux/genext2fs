@@ -1,5 +1,5 @@
 Summary:	Tools for the second extended (ext2) filesystem
-Summary(pl.UTF-8):   Narzędzia do systemu plikowego ext2
+Summary(pl.UTF-8):	Narzędzia do systemu plikowego ext2
 Name:		genext2fs
 Version:	1.3
 Release:	3
