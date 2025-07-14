@@ -23,7 +23,7 @@ linkami symbolicznymi i plikami urządzeń jako normalny użytkownik.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 install %{SOURCE1} Makefile
 
